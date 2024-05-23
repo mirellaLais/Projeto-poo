@@ -8,6 +8,6 @@ public class Matricula {
     }
 
     public void exibirDetalhes() {
-        System.out.println("Matrícula do Aluno: " + aluno.nome + " na Série: " + aluno.getSerie());
+        System.out.println("Aluno(a) " + aluno.nome + " matriculado(a) na Série " + aluno.getSerie()+ " com sucesso!");
     }
 }

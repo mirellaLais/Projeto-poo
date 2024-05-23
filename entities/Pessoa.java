@@ -2,11 +2,15 @@ package entities;
 
 public abstract class Pessoa {
     protected String nome;
-    protected String cpf;
+    protected String responsavel;
+    protected String endereco;
+    protected String numero;
 
-    public Pessoa(String nome, String cpf) {
+    public Pessoa(String nome, String responsavel, String endereco, String numero) {
         this.nome = nome;
-        this.cpf = cpf;
+        this.responsavel = responsavel;
+        this.endereco = endereco;
+        this.numero = numero;
     }
 
     public abstract void mostrarInformacoes();
