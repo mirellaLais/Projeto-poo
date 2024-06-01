@@ -1,0 +1,27 @@
+package controller;
+
+import model.Aluno;
+import repository.MatriculaRepository;
+import java.util.List;
+
+public class MatriculaController {
+    private MatriculaRepository repository = new MatriculaRepository();
+
+    public void matricularAluno(Aluno aluno) {
+        repository.addAluno(aluno);
+    }
+
+    public List<Aluno> listarAlunos() {
+        return repository.getAllAlunos();
+    }
+
+    public Aluno buscarAlunoPorMatricula(String numeroMatricula) {
+        return repository.getAlunoByMatricula(numeroMatricula);
+    }
+
+    public void removerAluno(String numeroMatricula) {
+        repository.removeAluno(numeroMatricula);
+    }
+
+    // Métodos de atualização, se necessário
+}
