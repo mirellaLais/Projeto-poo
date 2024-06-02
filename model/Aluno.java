@@ -1,26 +1,33 @@
 package model;
 
-import java.util.Date;
-
 public class Aluno {
     private String nome;
-    private int serie;
+    private String serie;
     private int idade;
+    private String dataNascimento;
     private String endereco;
-    private Date dataNascimento;
     private Responsavel responsavel;
-    private String numeroMatricula;
 
-    public Aluno(String nome, int serie, int idade, String endereco, Date dataNascimento, Responsavel responsavel) {
+    public Aluno(String nome, String serie, int idade, String dataNascimento, String endereco, Responsavel responsavel) {
         this.nome = nome;
         this.serie = serie;
         this.idade = idade;
-        this.endereco = endereco;
         this.dataNascimento = dataNascimento;
+        this.endereco = endereco;
         this.responsavel = responsavel;
-        this.numeroMatricula = Util.generateMatriculaNumber();
     }
 
-    // Getters e Setters
-    // toString method override
+    public String getNome() {
+        return nome;
+    }
+
+    public void imprimirFicha() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Série: " + serie);
+        System.out.println("Idade: " + idade);
+        System.out.println("Data de Nascimento: " + dataNascimento);
+        System.out.println("Endereço: " + endereco);
+        System.out.println("Responsável: " + responsavel.getNome());
+        System.out.println();
+    }
 }
