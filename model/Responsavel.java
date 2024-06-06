@@ -13,8 +13,7 @@ public class Responsavel extends Pessoa {
  * Com essas melhorias, a saída das informações do responsável fica mais clara e fácil de ler. Essa abordagem ajuda a garantir que os dados são apresentados de maneira organizada, o que pode ser especialmente útil em um sistema que exibe informações detalhadas sobre pessoas.*/
     @Override
     public String getIdentificacao() {
-        return "Responsável: " + getNome() + "\n" +
-               "Número para contato do Responsável: " + getNumeroContato() + "\n" +
+        return "Número para contato do Responsável: " + getNumeroContato() + "\n" +
                "CPF do responsável: " + getCpfResponsavel();
     }
 }

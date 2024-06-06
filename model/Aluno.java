@@ -32,6 +32,5 @@ public class Aluno {
         System.out.println("Data de Nascimento: " + dataNascimento);
         System.out.println("Endereço: " + endereco);
         System.out.println("Responsável: " + responsavel.getNome());
-        System.out.println();
     }
 }
