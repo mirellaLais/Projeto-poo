@@ -17,6 +17,10 @@ public class Aluno {
         this.responsavel = responsavel;
     }
 
+    public Responsavel getResponsavel() {
+        return responsavel;
+    }
+
     public String getNome() {
         return nome;
     }
